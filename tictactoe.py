@@ -1,8 +1,5 @@
-# Tic-Tac-Toe in Python
-
-# Initialize the board
 board = [[' ' for _ in range(3)] for _ in range(3)]
-current_player = 'X'  # Player X starts
+current_player = 'X' 
 
 def initialize_board():
     global board
@@ -27,13 +24,11 @@ def player_move():
             print("Please enter two numbers separated by space (e.g., 1 2).")
 
 def check_winner():
-    # Check rows and columns
     for i in range(3):
         if all(board[i][j] == current_player for j in range(3)) or \
            all(board[j][i] == current_player for j in range(3)):
             return True
 
-    # Check diagonals
     if all(board[i][i] == current_player for i in range(3)) or \
        all(board[i][2 - i] == current_player for i in range(3)):
         return True
@@ -43,7 +38,7 @@ def check_winner():
 def is_draw():
     return all(board[i][j] != ' ' for i in range(3) for j in range(3))
 
-# Game loop
+
 def play_game():
     global current_player
     initialize_board()
@@ -64,3 +59,4 @@ def play_game():
 
 if __name__ == "__main__":
     play_game()
+
