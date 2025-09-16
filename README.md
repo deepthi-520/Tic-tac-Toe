@@ -44,21 +44,6 @@ tic-tac-toe/
 
 └── README.md        # Project documentation
 
-## 🎯 Example Gameplay
-
-|   |   
----|---|---
-   |   |   
----|---|---
-   |   |   
-
-Player X, enter your move (row and column 1-3): 1 1
-
- X |   |   
----|---|---
-   |   |   
----|---|---
-   |   |
 
 ## 🔮 Future Enhancements
 
